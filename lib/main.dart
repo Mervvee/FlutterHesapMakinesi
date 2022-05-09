@@ -10,18 +10,18 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        debugShowCheckedModeBanner: false, home: HesapMakinesi());
+        debugShowCheckedModeBanner: false, home: Calculator());
   }
 }
 
-class HesapMakinesi extends StatefulWidget {
-  const HesapMakinesi({Key? key}) : super(key: key);
+class Calculator extends StatefulWidget {
+  const Calculator({Key? key}) : super(key: key);
 
   @override
-  _HesapMakinesiState createState() => _HesapMakinesiState();
+  _CalculatorState createState() => _CalculatorState();
 }
 
-class _HesapMakinesiState extends State<HesapMakinesi> {
+class _CalculatorState extends State<Calculator> {
   var output = "0";
   var sayi1 = 0.0;
   var sayi2 = 0.0;
